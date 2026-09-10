@@ -66,7 +66,7 @@ int main(int argc, char* argv[]) {
 
     const auto inicio = std::chrono::steady_clock::now();
 
-    #pragma omp parallel for reduction(+ : suma)
+    #pragma omp parallel for reduction(+ : suma) schedule(static)
     for (long long i = 0; i < n; ++i) {
         const double x = kLimiteInferior +
                          (static_cast<double>(i) + 0.5) * dx;
