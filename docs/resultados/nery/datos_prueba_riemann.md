@@ -18,17 +18,17 @@ de un benchmark oficial.
 ### Carga pequeña
 
 - N: `10,000,000`.
-- Tiempo preliminar: `0.015502209 s`.
+- Tiempo preliminar: `0.0154431 s`.
 
 Este tamaño reemplaza la propuesta inicial de `1,000,000`, cuyo tiempo preliminar
-fue de apenas `0.001545248 s`. Conserva una ejecución breve y permitirá estudiar
+fue de apenas `0.001662681 s`. Conserva una ejecución breve y permitirá estudiar
 posteriormente si el costo de crear y coordinar threads resulta significativo frente
 al trabajo útil.
 
 ### Carga mediana
 
 - N: `100,000,000`.
-- Tiempo preliminar: `0.155176175 s`.
+- Tiempo preliminar: `0.15689023 s`.
 
 Produce aproximadamente un orden de magnitud más de trabajo que la carga pequeña,
 pero continúa siendo manejable. Sirve como punto intermedio para observar cómo el
@@ -37,7 +37,7 @@ tamaño del problema afecta la capacidad de aprovechar múltiples threads.
 ### Carga grande
 
 - N: `500,000,000`.
-- Tiempo preliminar: `0.874478527 s`.
+- Tiempo preliminar: `0.775939592 s`.
 
 Genera una carga computacional claramente mayor y un tiempo medible, sin hacer
 imprácticas las repeticiones de una etapa posterior. Permitirá estudiar escalabilidad
