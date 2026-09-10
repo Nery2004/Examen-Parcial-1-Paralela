@@ -1,20 +1,12 @@
-# Índice de evidencias de Nery
+# Evidencias de ejecución — Nery
 
-La carpeta no contiene capturas de ejecución reales. Solo existía `.gitkeep` al
-realizar esta revisión, por lo que no se agregan filas que aparenten evidencia
-inexistente.
+Las siguientes capturas provienen de ejecuciones reales con `N = 500000000`.
+Estos tiempos documentan la evidencia visual y no sustituyen los resultados del
+benchmark oficial.
 
-| Evidencia requerida | Estado | Observación |
-|---|---|---|
-| Riemann secuencial | Faltante | No existe captura para verificar N, resultado y tiempo. |
-| Riemann paralelo — 1 thread | Faltante | No existe captura. |
-| Riemann paralelo — 2 threads | Faltante | No existe captura. |
-| Riemann paralelo — 4 threads | Faltante | No existe captura. |
-| Riemann paralelo — 8 threads | Faltante | No existe captura. |
-| Blur secuencial | Faltante | Blur no estuvo disponible para las pruebas de Nery. |
-| Blur paralelo | Faltante | Blur no estuvo disponible para las pruebas de Nery. |
-
-Los tiempos tabulados permanecen en `docs/resultados/nery/benchmark_riemann.md`,
-pero ese archivo no sustituye las capturas solicitadas por el plan. No fue posible
-comparar tiempos visibles contra resultados almacenados porque no existe ninguna
-imagen de evidencia.
+| Archivo | Algoritmo | N | Threads | Resultado | Tiempo | Evidencia |
+|---|---|---:|:---:|---:|---:|---|
+| `riemann_500000000_secuencial.png` | Suma de Riemann | 500000000 | Secuencial | 0.333333333333355 | 0.772312955 s | Ejecución secuencial real |
+| `riemann_500000000_2threads.png` | Suma de Riemann | 500000000 | 2 | 0.333333333333275 | 0.386340598 s | Ejecución paralela real |
+| `riemann_500000000_4threads.png` | Suma de Riemann | 500000000 | 4 | 0.333333333333294 | 0.19859591 s | Ejecución paralela real |
+| `riemann_500000000_8threads.png` | Suma de Riemann | 500000000 | 8 | 0.333333333333326 | 0.119902034 s | Ejecución paralela real |
