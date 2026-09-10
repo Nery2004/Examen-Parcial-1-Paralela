@@ -5,7 +5,7 @@
 - Abby Sofia Donis Agreda (22440)
 - Renato Manuel Rojas Roldán (23813)
 - José Nery Molina Figueroa (23218)
-[Nota: Nery hace uso de dos cuentas, siendo la segunda "Dev2"]
+[Nota: Nery hace uso de dos cuentas, siendo la segunda "Dev2reteailtecnologies"]
 
 **Problemas a resolver**
 | Problema Original | Descripción General |
