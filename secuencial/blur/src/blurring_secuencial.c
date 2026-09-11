@@ -10,8 +10,8 @@ int main(int argc, char *argv[]) {
     // poder probar las 3 imágenes (pequeña/mediana/grande) de data/blur/
     // sin recompilar. Si no se pasan argumentos, se usan estos valores
     // por defecto:
-    const char *ruta_entrada = "../../data/blur/pequena.bmp";
-    const char *ruta_salida  = "../../data/blur/resultado_blur.bmp";
+    const char *ruta_entrada = "../../../data/blur/pequena.bmp";
+    const char *ruta_salida  = "../../../data/blur/resultado_blur.bmp";
 
     if (argc >= 2) ruta_entrada = argv[1];
     if (argc >= 3) ruta_salida  = argv[2];

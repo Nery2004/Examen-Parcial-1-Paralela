@@ -18,10 +18,15 @@ int main(int argc, char *argv[]) {
 
     // abrir imagen original y preparar la de salida
     FILE *archivo_entrada = fopen(ruta_entrada, "rb");
-    FILE *archivo_salida = fopen(ruta_salida, "wb");
+    if (!archivo_entrada){
+        fprintf(stderr, "ERROR: no se pudo abrir '%s'\n", ruta_entrada);
+        return 1;
+    }
 
-    if (!archivo_entrada || !archivo_salida) {
-        printf("Error al abrir los archivos. Verifica la ruta: %s\n", ruta_entrada);
+    FILE *archivo_salida = fopen(ruta_salida, "wb");
+    if(!archivo_salida){
+        fprintf(stderr, "Error: no se pudo crear '%s'\n", ruta_salida);
+        fclose(archivo_entrada);
         return 1;
     }
 
