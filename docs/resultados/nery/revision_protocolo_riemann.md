@@ -14,7 +14,3 @@ Las dos versiones conservan `f(x) = x²`, el intervalo `[0, 1]`, el método del
 punto medio, el mismo `N`, el mismo compilador y flags comparables. La versión
 secuencial no usa OpenMP; en la paralela los threads se controlan mediante
 `OMP_NUM_THREADS`.
-
-No se encontró en el repositorio un documento de protocolo creado por Abby. Esta
-revisión aplica el protocolo indicado en el plan y en las instrucciones de la etapa,
-sin sustituir la definición o consolidación global que le corresponde a Abby.

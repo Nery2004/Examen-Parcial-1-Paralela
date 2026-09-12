@@ -77,15 +77,4 @@ El mayor speedup corresponde a `N = 500,000,000`, 8 threads: `6.634260056`.
 La mayor eficiencia numérica corresponde a `N = 100,000,000`, 1 thread:
 `1.007878278` (`100.787828%`), valor afectado por variabilidad temporal.
 
-### Blur — resultados individuales
 
-Nery no pudo ejecutar Blur porque durante su etapa de benchmark no existían las
-implementaciones secuencial y paralela ni imágenes oficiales de Renato. No se
-incluyen tiempos, speedups o eficiencias inventados.
-
-### Evidencia
-
-Los tiempos originales y promedios están conservados en
-`docs/resultados/nery/benchmark_riemann.md`. `docs/screenshots/nery/` no contiene
-capturas reales adicionales; solo existe `.gitkeep`, por lo que no se afirma que haya
-evidencia gráfica disponible.

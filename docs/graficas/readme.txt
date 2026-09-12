@@ -1,0 +1,1 @@
+Cada quien tiene sus propias gráficas en su carpeta 
